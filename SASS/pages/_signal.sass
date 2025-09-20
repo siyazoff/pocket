@@ -1,0 +1,116 @@
+.signal-hero
+    &__video
+        height: 180px
+        width: 100%
+        border-radius: 12px
+        object-fit: cover
+        margin-bottom: 10px
+
+    &__box
+        +flex-column
+        gap: 10px
+
+    &__title
+        font-size: 16px
+        line-height: 1.2
+        color: $clr-dark
+
+        span
+            background: $clr-dark
+            padding: 0px 4px
+            border-radius: 4px
+            background: #1C1F2E
+            color: $clr-white
+            font-weight: bold
+
+    &__notify
+        padding: 9px
+        +radius8
+        display: flex
+        gap: 8px
+        border: 1px dashed #D3E0ED
+        margin-bottom: 10px
+
+        svg
+            flex-shrink: 0
+
+        span
+            font-size: 10px
+            line-height: 1.2
+            color: #6E798D
+
+
+.signal-register
+    padding: 17px
+    +bg-white
+    +def-border
+    border-radius: 12px
+    +flex-column
+    text-align: center
+    align-items: center
+
+    &__title
+        font-size: 14px
+        font-weight: 500
+        line-height: 1.2
+        color: #232536
+        margin-bottom: 8px
+
+    &__step
+        font-size: 12px
+        line-height: 1
+        color: #232536
+        padding: 10px 16px
+        background: #D8DEE9
+        border-radius: 50px
+        width: fit-content
+        margin-bottom: 4px
+
+    &__subtitle
+        font-size: 14px
+        line-height: 1.2
+        margin-bottom: 5px
+
+    &__btn
+        width: fit-content
+        min-width: 190px
+        font-weight: bold
+        margin-bottom: 4px
+
+    &__notify
+        +flex-center
+        gap: 4px
+        font-size: 12px
+        line-height: 1.2
+        color: $clr-danger
+
+.signal-single-text
+    font-size: 12px
+    font-weight: bold
+    line-height: 1.2
+    color: $clr-dark
+    text-align: center
+
+.signal-runline
+    padding: 8px 15px
+    display: flex
+    overflow: hidden
+    background: linear-gradient(90deg,rgba(5, 150, 105, 1) 0%, rgba(37, 99, 235, 1) 100%)
+
+    span
+        flex-shrink: 0
+        display: -webkit-box
+        -webkit-box-orient: vertical
+        -webkit-line-clamp: 1
+        color: $clr-white
+        font-size: 11px
+        line-height: 1
+        animation: 130s linear 0s infinite normal none running podcast-line
+
+
+
+@keyframes podcast-line
+    0%
+        transform: translateX(0px)
+    100%
+        transform: translateX(-100%)

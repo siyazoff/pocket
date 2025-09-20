@@ -1,0 +1,50 @@
+.header
+    position: fixed
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
+    background: #101828
+    z-index: 1001
+
+    &__box
+        padding: 15px 0
+        +flex-between
+
+
+    &_hallway
+        &__logo
+            +flex-center
+            gap: 12px
+            span
+                font-size: 24px
+                line-height: 1
+                color: $clr-white
+
+        &__box
+            +flex-center
+                
+    &__logo
+        +flex-center
+        gap: 5px
+        color: $clr-white
+
+    &__right
+        +flex-center
+        gap: 4px
+
+    &__username
+        color: $clr-white
+        font-size: 14px
+        line-height: 1
+    
+    &__lvl
+        padding: 4px 8px
+        background: #E9EEF6
+        border-radius: 4px
+        font-size: 12px
+        line-height: 1
+        color: #232536
+
+    &__location
+        display: flex

@@ -1,0 +1,172 @@
+.gladsee
+    +flex-column
+    gap: 8px
+
+    &__btn
+        margin-top: auto
+        display: flex
+
+.gladsee-owner
+    padding: 17px
+    +radius8
+    +bg-white
+    +flex-column
+    +flex-center
+    text-align: center
+    gap: 20px
+    border: 1px solid #D8DEE9
+
+    &__img-wrapper
+        padding: 13px
+        border: 1px solid #D8DEE9
+        border-radius: 50%
+
+    &__img
+        width: 120px
+        height: 120px
+        border-radius: 50%
+        object-fit: cover
+
+
+    &__content
+        +flex-column
+        gap: 10px
+
+    &__title
+        color: $clr-dark
+        font-size: 24px
+        line-height: 1
+        font-weight: bold
+
+    &__subtitle
+        font-size: 18px
+        line-height: 1
+        color: #6E798D
+
+.gladsee-congrats
+    padding: 17px 37px
+    +bg-white
+    text-align: center
+    +def-border
+    +radius8
+
+    &__title
+        font-size: 24px
+        line-height: 1.2
+        color: $clr-dark
+
+        span
+            color: $clr-white
+            +bg-dark
+            border-radius: 4px
+            padding-inline: 4px
+
+    &__desc
+        margin-top: 18px
+        border-top: 2px solid #D8DEE9
+        padding-top: 1px
+        padding-inline: 25px
+        font-size: 16px
+        line-height: 1.2
+
+
+.step2
+    +flex-column
+    gap: 20px
+
+.step2-swipe
+    +bg-white
+    +radius8
+    +def-border
+    position: relative
+    height: 220px
+    width: 100%
+    display: flex
+    align-items: end
+    justify-content: center
+
+    &__icon
+        position: absolute
+        top: 17px
+        left: 17px
+    
+    &__pagi
+        position: absolute
+        top: 17px
+        right: 17px
+        font-size: 16px
+        font-weight: 700
+        line-height: 1
+        color: $clr-dark
+
+    &__img
+        height: 200px
+        width: 100%
+        max-width: 140px
+        object-fit: contain
+        object-position: bottom
+
+.step2-fact
+    +flex-column
+    gap: 25px
+
+    &__box
+        +bg-white
+        padding: 17px 20px
+        +flex-column
+        gap: 4px
+        position: relative
+
+    &__desc
+        font-size: 12px
+        line-height: 1.2
+        color: $clr-dark
+        text-align: center
+
+    &__perc
+        +flex-center
+        padding: 7px 17px
+        background: #EEF2F9
+        text-align: center
+        border: 1px dashed $clr-primary
+        border-radius: 4px
+        font-size: 16px
+        line-height: 1
+        font-weight: bold
+        color: $clr-primary
+    
+    &__icon
+        position: absolute
+        top: 100%
+        left: 93px
+
+    &__boxbtm
+        +flex-between
+
+    &__man
+        padding: 7px
+        +bg-white
+        border-radius: 50%
+        +def-border
+        width: 94px
+        height: 94px
+
+        &-img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 50%
+
+    &__signal
+        +flex-center
+        gap: 5px
+        padding: 20px 15px
+        background: #E0EEFF
+        border-radius: 32px
+        border: 1px solid $clr-primary
+        font-size: 16px
+        line-height: 1
+        color: $clr-primary
+        font-weight: bold
+
+    

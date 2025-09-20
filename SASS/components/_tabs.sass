@@ -1,0 +1,29 @@
+.tabs
+    +flex-start
+    flex-wrap: wrap
+    gap: wm(14)
+    border: none
+
+    +media(m)
+        gap: wm(8)
+
+    a[role=tab]
+        +radius8
+        border: wm(1) solid $clr-primary !important
+        color: $clr-primary
+        +samsung-sans
+        font-size: wm(18)
+        font-weight: 400
+        line-height: 1
+        padding: wm(16) wm(32)
+        +transition
+
+        +media(m)
+            font-size: wm(14)
+            padding: wm(9) wm(12)
+            
+
+        &[aria-selected=true]
+            background: $clr-primary
+            color: $clr-white
+

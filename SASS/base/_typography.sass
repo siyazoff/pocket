@@ -1,0 +1,57 @@
+h1, h2, h3, h4, h5, h6
+    +samsung-sans
+
+.title
+    color: $clr-primary
+    font-size: wm(32)
+    font-weight: 700
+    line-height: 1
+    margin-bottom: wm(24)
+    padding-bottom: wm(24)
+    border-bottom: wm(1) solid $clr-gray
+
+    &_black
+        color: $clr-dark
+
+    +media(m)
+        font-size: wm(18)
+        margin-bottom: wm(16)
+        padding-bottom: wm(8)
+
+
+.title28
+    color: $clr-dark-gray
+    +samsung-sans
+    font-size: wm(28)
+    font-weight: 700
+    line-height: 1
+
+    +media(m)
+        font-size: wm(14)
+
+
+.heading
+    +flex-column
+    gap: wm(20)
+
+    +media(m)
+        gap: wm(10)
+
+
+.subtitle
+    color: $clr-dark
+    font-size: wm(22)
+    font-weight: 700
+    line-height: 1.2
+
+    +media(m)
+        font-size: wm(18)
+
+.desc
+    color: $clr-dark
+    font-size: wm(16)
+    font-weight: 400
+    line-height: 1.2
+
+    +media(m)
+        font-size: wm(14)
