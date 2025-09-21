@@ -120,6 +120,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const tabLinks = document.querySelectorAll(".train-sec-tabs a");
+  const infoPanes = document.querySelectorAll(".training-hero__box > div");
+
+  tabLinks.forEach((link, i) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault(); // отменяем якорь
+
+      // выключаем всё
+      [...tabLinks, ...infoPanes].forEach((el) =>
+        el.classList.remove("is-active")
+      );
+
+      // включаем выбранный индекс
+      link.classList.add("is-active");
+      infoPanes[i].classList.add("is-active");
+    });
+  });
+
   //FAQ
   const faq = document.querySelectorAll(".faq-item");
 

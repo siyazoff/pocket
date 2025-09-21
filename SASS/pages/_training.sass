@@ -1,0 +1,385 @@
+.training-hero
+    position: relative
+    z-index: 1
+
+
+    &::before
+        content: ''
+        +abs-fill
+        z-index: -1
+        background: #1F3F6ED9
+
+    &__bg
+        +abs-fill
+        width: 100%
+        height: 100%
+        z-index: -2
+        object-fit: cover
+
+    
+.training-hero-item
+    +flex-column
+    gap: 9px
+    display: none
+    min-height: 130px
+    justify-content: center
+
+    &.is-active
+        display: flex
+
+    &__title
+        color: $clr-white
+        font-size: 30px
+        font-weight: 700
+        line-height: 1.2
+
+    &__desc
+        color: $clr-white
+        font-size: 14px
+        font-weight: 400
+        line-height: 1.2
+
+
+.train-register
+    border-radius: 12px
+    background: #1F3F6E
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10)
+    +flex-column
+    align-items: center
+    gap: 8px
+    padding: 16px
+    text-align: center
+    margin-bottom: 12px
+
+    &__title
+        color: $clr-white
+        font-size: 12px
+        font-weight: 700
+        line-height: 1.2
+
+    &__btn
+        padding: 13px 20px
+
+
+.train-sec-tabs
+    margin-bottom: 16px
+    
+    li
+        flex-grow: 1
+
+    a[role=tab]
+        border: none !important
+
+
+.studcard
+    position: relative
+    display: grid
+    grid-template-columns: 72px 1fr
+    gap: 12px
+    background: $clr-white
+    padding: 16px
+    border-radius: 12px
+    overflow: hidden
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10)
+
+    &__icon
+        background: #EEF2F9
+        height: 72px
+        width: 100%
+        border-radius: 8px
+        +flex-center
+
+    &__right
+        +flex-column
+        gap: 9px
+
+    &__lvl
+        padding: 4px 16px
+        border-radius: 20px
+        background: #8DA5BF
+        color: $clr-white
+        font-size: 12px
+        font-weight: 700
+        line-height: 1
+        width: fit-content
+
+    &__title
+        color: #232536
+        font-size: 16px
+        font-weight: 700
+        line-height: 1.2
+
+    &__subtitle
+        color: #232536
+        font-size: 14px
+        font-weight: 700
+        line-height: 1.2
+
+    &__list
+        +flex-column
+        gap: 6px
+
+        &-item
+            color: #6E798D
+            font-size: 10px
+            font-weight: 400
+            line-height: 1.2
+            display: flex
+            align-items: center
+            gap: 4px
+
+            &::before
+                content: ''
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='15' viewBox='0 0 14 15' fill='none'%3E%3Cpath d='M7 14.6094C10.866 14.6094 14 11.4754 14 7.60938C14 3.74338 10.866 0.609375 7 0.609375C3.13401 0.609375 0 3.74338 0 7.60938C0 11.4754 3.13401 14.6094 7 14.6094Z' fill='%2343A047'/%3E%3Cpath d='M4.5 7.60938L6.5 9.60938L9.5 6.60938' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+                background-repeat: no-repeat
+                background-size: contain
+                background-position: center
+                width: 14px
+                height: 14px
+                display: flex
+                flex-shrink: 0
+
+    &__btn
+        +flex-center
+        gap: 8px
+        padding: 11px 9px
+        +radius8
+        background: #8DA5BF
+        color: $clr-white
+        font-size: 15px
+        font-weight: 700
+        line-height: 1.2
+        width: fit-content
+
+        svg
+            flex-shrink: 0
+
+    &__lock
+        position: absolute
+        top: 0
+        right: 0
+        padding: 6px 7px
+        +flex-center
+        border-radius: 0 6px 0 8px
+        background: #D12929
+
+    &__desc
+        color: #6E798D
+        font-size: 12px
+        font-weight: 400
+        line-height: 1.2
+
+
+
+.studcards-wrapper
+    +flex-column
+    gap: 12px
+
+
+
+.bonuscard
+    position: relative
+    padding: 16px
+    border-radius: 12px
+    background: #1F3F6E
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10)
+    +flex-column
+    gap: 8px
+    overflow: hidden
+
+    &__title
+        color: $clr-white
+        font-size: 18px
+        font-weight: 700
+        line-height: 1.2
+
+    &__desc
+        color: $clr-white
+        font-size: 12px
+        font-weight: 400
+        line-height: 1.2
+
+    &__quote
+        display: grid
+        grid-template-columns: 80px 1fr
+        gap: 12px
+        padding: 16px
+        border-radius: 4px
+        background: #1C1F2E
+        
+        &-img
+            width: 80px
+            height: 80px
+            border-radius: 50%
+            object-fit: cover
+
+        &-content
+            +flex-column
+            gap: 3px
+
+        &-title
+            color: $clr-white
+            font-size: 10px
+            font-weight: 700
+            line-height: 1.2
+        
+        &-desc
+            color: $clr-white
+            font-size: 10px
+            font-weight: 400
+            line-height: 1.2
+
+    &__btn
+        padding: 12px 20px
+        font-weight: 700
+
+
+.prof-calculator
+    padding: 16px
+    +radius8
+    background: #1C2939
+    +flex-column
+    gap: 8px
+
+    &__title
+        color: $clr-white
+        font-size: 12px
+        font-weight: 700
+        line-height: 1.2
+
+    &__box
+        +flex-column
+        gap: 5px
+
+    &__caption
+        color: $clr-white
+        font-size: 12px
+        font-weight: 400
+        line-height: 1.2
+
+        span
+            color: $clr-primary
+            font-weight: 700
+
+    &__vals
+        +flex-between
+
+    &__val
+        color: #6E798D
+        font-size: 10px
+        font-weight: 400
+        line-height: 1.2
+
+    &__range
+        margin: 0
+    
+    &__totalbox
+        +flex-column
+        gap: 2px
+        align-items: center
+        text-align: center
+
+    &__subtitle
+        color: $clr-white
+        font-size: 12px
+        font-weight: 400
+        line-height: 1.2
+
+    &__total
+        color: #43A047
+        font-size: 18px
+        font-weight: 700
+        line-height: 1.2
+
+.lessons-wrapper
+    position: relative
+    +flex-column
+    background: $clr-white
+    padding: 12px
+    +radius8
+    overflow: hidden
+    z-index: 0
+
+    &::before
+        content: ''
+        +abs-fill
+        background: rgba(0, 0, 0, 0.60)
+        z-index: 1
+
+    &::after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        width: 100px
+        height: 100px
+        transform: translate(-50%, -50%)
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='104' viewBox='0 0 90 104' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 31.8102C15 23.615 18.1607 15.7555 23.7868 9.96056C29.4129 4.16569 37.0435 0.910156 45 0.910156C52.9565 0.910156 60.5871 4.16569 66.2132 9.96056C71.8393 15.7555 75 23.615 75 31.8102H80C82.6522 31.8102 85.1957 32.8954 87.0711 34.827C88.9464 36.7586 90 39.3785 90 42.1102V93.6102C90 96.3419 88.9464 98.9618 87.0711 100.893C85.1957 102.825 82.6522 103.91 80 103.91H10C7.34784 103.91 4.8043 102.825 2.92893 100.893C1.05357 98.9618 0 96.3419 0 93.6102V42.1102C0 39.3785 1.05357 36.7586 2.92893 34.827C4.8043 32.8954 7.34784 31.8102 10 31.8102H15ZM45 11.2102C50.3043 11.2102 55.3914 13.3806 59.1421 17.2438C62.8929 21.107 65 26.3467 65 31.8102H25C25 26.3467 27.1071 21.107 30.8579 17.2438C34.6086 13.3806 39.6957 11.2102 45 11.2102ZM55 62.7102C55 64.5182 54.5379 66.2943 53.6602 67.8601C52.7825 69.4258 51.5202 70.726 50 71.63V78.1602C50 79.5261 49.4732 80.836 48.5355 81.8018C47.5979 82.7676 46.3261 83.3102 45 83.3102C43.6739 83.3102 42.4021 82.7676 41.4645 81.8018C40.5268 80.836 40 79.5261 40 78.1602V71.63C38.0937 70.4963 36.6039 68.7463 35.7615 66.6516C34.9192 64.5568 34.7715 62.2344 35.3412 60.0443C35.9109 57.8543 37.1663 55.9191 38.9127 54.5388C40.659 53.1585 42.7987 52.4103 45 52.4102C47.6522 52.4102 50.1957 53.4954 52.0711 55.427C53.9464 57.3586 55 59.9785 55 62.7102Z' fill='white'/%3E%3C/svg%3E")
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center
+        z-index: 2
+
+
+
+.lesson
+    display: grid
+    grid-template-columns: 24px 1fr 24px
+    gap: 4px
+    align-items: center
+    padding: 8px 0
+
+    &:not(:last-child)
+        border-bottom: 1px solid #F1F4FB
+
+    &__icon
+        +flex-center
+        width: 100%
+        height: 24px
+
+
+    &__btn
+        +flex-center
+        width: 100%
+        height: 24px
+
+    &__title
+        color: $clr-dark
+        font-size: 12px
+        font-weight: 700
+        line-height: 1.2
+
+.vipcom
+    +flex-column
+    align-items: center
+    gap: 10px
+
+    &__img
+        width: 160px
+        height: 160px
+        object-fit: cover
+        border-radius: 50%
+
+    &__title
+        color: $clr-dark
+        font-size: 12px
+        font-weight: 700
+        line-height: 1.2
+
+    &__desc
+        color: #6E798D
+        font-size: 12px
+        font-weight: 400
+        line-height: 1.2
+        display: flex
+        gap: 4px
+
+        &::before
+            content: ''
+            width: 12px
+            height: 12px
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='13' viewBox='0 0 12 13' fill='none' %3E%3Cpath d='M6 0.610352C9.3138 0.610352 12 3.29655 12 6.61035C12 9.92415 9.3138 12.6104 6 12.6104C2.6862 12.6104 0 9.92415 0 6.61035C0 3.29655 2.6862 0.610352 6 0.610352ZM8.121 4.43895L5.151 7.40895L3.879 6.13635C3.82329 6.0806 3.75715 6.03638 3.68435 6.00619C3.61155 5.97601 3.53352 5.96046 3.45471 5.96043C3.29555 5.96037 3.14288 6.02355 3.0303 6.13605C2.91772 6.24856 2.85443 6.40118 2.85438 6.56034C2.85432 6.7195 2.9175 6.87217 3.03 6.98475L4.6848 8.63955C4.74609 8.70087 4.81886 8.74951 4.89896 8.7827C4.97905 8.81589 5.0649 8.83297 5.1516 8.83297C5.2383 8.83297 5.32415 8.81589 5.40424 8.7827C5.48434 8.74951 5.55711 8.70087 5.6184 8.63955L8.97 5.28795C9.08259 5.17537 9.14583 5.02267 9.14583 4.86345C9.14583 4.70423 9.08259 4.55153 8.97 4.43895C8.85742 4.32637 8.70472 4.26312 8.5455 4.26312C8.38628 4.26312 8.23358 4.32637 8.121 4.43895Z' fill='%2332AB41' /%3E%3C/svg%3E")
+            background-size: contain
+            background-repeat: no-repeat
+            background-position: center
+            flex-shrink: 0

@@ -1,29 +1,22 @@
 .tabs
     +flex-start
     flex-wrap: wrap
-    gap: wm(14)
+    gap: 4px
     border: none
 
-    +media(m)
-        gap: wm(8)
-
     a[role=tab]
-        +radius8
-        border: wm(1) solid $clr-primary !important
-        color: $clr-primary
-        +samsung-sans
-        font-size: wm(18)
+        width: 100%
+        border-radius: 4px
+        border: none
+        color: #6E798D
+        font-size: 12px
         font-weight: 400
         line-height: 1
-        padding: wm(16) wm(32)
+        padding: 10px 15px
+        text-align: center
         +transition
 
-        +media(m)
-            font-size: wm(14)
-            padding: wm(9) wm(12)
-            
-
         &[aria-selected=true]
-            background: $clr-primary
+            background: #1C1F2E
             color: $clr-white
 
