@@ -138,17 +138,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  //FAQ
-  const faq = document.querySelectorAll(".faq-item");
+  //lesson
+  const lesson = document.querySelectorAll(".lesson");
 
-  faq.forEach((el) => {
+  lesson.forEach((el) => {
     el.addEventListener("click", function () {
       this.classList.toggle("active");
-      let faqBody = this.querySelector(".faq-item__body");
-      if (faqBody.style.maxHeight) {
-        faqBody.style.maxHeight = null;
+      let lessonBody = this.querySelector(".lesson__body");
+      if (lessonBody.style.maxHeight) {
+        lessonBody.style.maxHeight = null;
       } else {
-        faqBody.style.maxHeight = faqBody.scrollHeight + "px";
+        lessonBody.style.maxHeight = lessonBody.scrollHeight + "px";
       }
     });
   });

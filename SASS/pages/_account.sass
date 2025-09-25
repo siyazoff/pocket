@@ -1,0 +1,158 @@
+.account-hero
+    position: relative
+    background: linear-gradient(0deg, rgba(31, 63, 110, 0.85) 0%, rgba(31, 63, 110, 0.85) 100%)
+
+    &__bg
+        +abs-fill
+        width: 100%
+        height: 100%
+        object-fit: cover
+        z-index: -2
+
+    &__title
+        color: $clr-white
+        font-size: wm(24)
+        font-weight: 700
+        line-height: 1.2
+        margin-bottom: 8px
+
+    &__desc
+        color: $clr-white
+        font-size: 14px
+        font-weight: 400
+        line-height: 1.2
+
+.account-card
+    padding: wm(16)
+    border-radius: wm(12)
+    background: $clr-white
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10)
+    display: flex
+    align-items: center
+    gap: 16px
+    margin-bottom: wm(16)
+
+    &__ava
+        border: wm(2) solid #E9EEF6
+        width: wm(64)
+        height: wm(64)
+        border-radius: 50%
+        overflow: hidden
+        flex-shrink: 0
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+    &__right
+        +flex-column
+        gap: wm(4)
+
+    &__top
+        +flex-between
+        gap: wm(12)
+
+    &__name
+        color: #232536
+        font-size: wm(16)
+        font-weight: 700
+        line-height: 1
+
+    &__actlvl
+        color: #232536
+        font-size: wm(12)
+        font-weight: 700
+        line-height: 1
+        padding: wm(4) wm(8) 
+        border-radius: wm(4)
+        background: #E9EEF6
+
+    &__lvlbox
+        position: relative
+        +flex-center
+        justify-content: space-between
+        gap: wm(12)
+        padding-inline: wm(9)
+        z-index: 0
+
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            height: wm(4)
+            width: 100%
+            background: #E9EEF6
+            z-index: -1
+
+    &__lvl
+        width: wm(24)
+        height: wm(24)
+        border-radius: 50%
+        background: #E9EEF6
+        color: #6E798D
+        text-align: center
+        font-size: wm(12)
+        font-weight: 700
+        line-height: 1
+        +flex-center
+
+    &__desc
+        color: #232536
+        font-size: 10px
+        font-weight: 400
+        line-height: 1
+
+
+.access-card
+    +flex-column
+    gap: 9px
+    padding: 16px
+    border-radius: 12px
+    background: #FFF
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10)
+
+    &__title
+        color: #232536
+        text-align: center
+        font-size: 14px
+        font-weight: 700
+        line-height: 1.2
+        padding-inline: 20px
+
+    &__btn
+        font-weight: 700
+
+    &__desc
+        color: #232536
+        text-align: center
+        font-size: 10px
+        font-weight: 400
+        line-height: 1.2
+        padding-inline: 10px
+
+    &__time
+        text-align: center
+        color: #D32F2F
+        font-size: 20px
+        font-weight: 700
+        line-height: 1.2
+
+    &__danger
+        border-top: 1px dashed #D3E0ED
+        display: grid
+        grid-template-columns: 28px 1fr
+        gap: 8px
+        padding-top: 9px
+
+        span
+            color: #6E798D
+            font-size: 10px
+            font-weight: 400
+            line-height: 1.5
+
+        svg
+            width: 28px
+            height: 28px
