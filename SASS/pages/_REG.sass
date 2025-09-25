@@ -274,3 +274,94 @@
 
         &_gray
             background: #C5CCD8
+
+
+.account-passed
+
+    &__box
+        +flex-column
+        gap: 12px
+
+
+.acclvlcard
+    position: relative
+    +flex-column
+    border-radius: 8px
+    background: #FFF
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10)
+    overflow: hidden
+
+    &__block
+        position: absolute
+        top: 0
+        right: 0
+        border-radius: 0 6px 0 8px
+        background: #D12929
+        padding: 6px 7px
+        +flex-center
+
+    &__top
+        padding: 8px
+        +flex-column
+        gap: 4px
+
+    &__lvl
+        color: $clr-white
+        font-size: 10px
+        font-weight: 700
+        line-height: 15px
+        border-radius: 80px
+        background: #32AB41
+        padding: 3px 8px
+        width: fit-content
+
+    &__title
+        color: $clr-dark
+        font-size: 12px
+        font-weight: 700
+        line-height: 18px
+
+    &__btm
+        padding: 4px
+        background: #1F3F6E
+        display: flex
+        align-items: center
+        gap: 8px
+
+    &__icon
+        width: 24px
+        height: 24px
+        border-radius: 50%
+        background: $clr-primary
+        +flex-center
+        flex-shrink: 0
+
+    &__right
+        +flex-column
+
+    &__bontitle
+        color: $clr-white
+        font-size: 12px
+        font-weight: 700
+        line-height: 18px
+
+    &__bondesc
+        color: $clr-white
+        font-size: 10px
+        font-weight: 400
+        line-height: 15px
+
+    &__notacc
+        padding: 13px
+        border-radius: 8px
+        background: #EEF2F9
+        color: #6E798D
+        text-align: center
+        font-size: 12px
+        font-weight: 700
+        line-height: 18px
+    
+
+    &.nonactive
+        .acclvlcard__btm
+            background: #1C1F2E
